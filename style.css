@@ -1,0 +1,82 @@
+html {
+    margin: 2rem;
+    background-color: snow;
+    width: fit-content;
+}
+
+h2 {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 18px;
+    color: blueviolet;
+    margin-bottom: 2px;
+    margin: 1rem;
+}
+
+::placeholder {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 15px;
+    font-weight: 120;
+    color: rgb(88, 85, 85);
+}
+
+label {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 14px;
+    color: rgb(104, 104, 104);
+    margin: 2.5rem;
+}
+
+form {
+    background-color: rgb(255, 233, 233);
+    width: moz-fit-content;
+    padding: 2rem;
+    margin-left: 1rem;
+    border: solid rgb(224, 127, 211) 1px;
+}
+
+input {
+    background-color: rgb(247, 243, 243);
+    width: 15rem;
+    padding: 0.5rem;
+    margin: 2.5px;
+    margin-left: 0.5rem;
+    border: solid rgb(199, 1, 172) 1px;
+}
+
+input.erro {
+    border: solid #FF0000 2.5px;
+    color:white;
+    background-color: lightcoral;
+}
+
+.mensagem {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+    color: rgb(199, 1, 172);
+    margin: 1rem;
+    
+}
+
+#resultado {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    color: darkgray;
+}
+
+footer, p {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+    font-size: 11px;
+    font-weight: 150;
+    color: rgb(199, 1, 172);
+    margin: 0.5rem;
+}
+
+button {
+    margin: 1rem;
+    padding: 0.5rem;
+    background-color: blueviolet;
+    color: white;
+}
