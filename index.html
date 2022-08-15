@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../Exercício/css/bootstrap.min.css" rel="stylesheet" >
+    <link rel="stylesheet" href="./style/custom.css">
+    <title>Website Fotografia</title>
+</head>
+
+<body>
+ 
+    <header>
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-md-6 col-sx-12">
+                    <h1>LOGO</h1>
+                </div>
+                <div class="container-fluid">
+                    <ul class="nav navbar-expand-sm flex-column flex-md-row">
+                        <li class="nav-item"><a class="nav-link active" href="#Home">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#About">About</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#Product">Products</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#Contact">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+    
+    <section id="carousel">
+    <div id="carouselProduct" class="carousel slide carousel-fade" data-bs-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#carouselProduct" data-bs-slide-to="0" class="active"></li>
+          <li data-target="#carouselProduct" data-bs-slide-to="1"></li>
+          <li data-target="#carouselProduct" data-bs-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-bs-interval = "2000">
+            <img class="d-block w-100" src="../Exercício/imagens/header-abstract.png" alt="First slide">
+          </div>
+          <div class="carousel-item" data-bs-interval = "2000">
+            <img class="d-block w-100" src="../Exercício/imagens/header-graduation.png" alt="Second slide">
+          </div>
+          <div class="carousel-item" data-bs-interval = "2000">
+            <img class="d-block w-100" src="../Exercício/imagens/header-wedding.png" alt="Third slide">
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselProduct" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselProduct" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+    </div>
+    </section>
+
+
+    <section id="About">
+        <div class="container">
+        <div class="row">
+            <div class="col-md-7 col-sm-12">
+                <h1><i class="fa-solid fa-heart"></i> About</h1>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deleniti repellendus tenetur molestias? Quas delectus possimus a omnis enim iure impedit id debitis. Quibusdam ipsum unde quaerat eaque iure quam natus.</p>
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalHistoria">Conheça Mais!</button>
+            </div>
+                <div class="col-md-5 col-sm-12">
+                <img src="./imagens/karl-joshua-bernal.jpg" alt="abstract-art" class="img-fluid" class="img-thumbnail">
+                </div>
+        </div>
+        </div>
+    </section>
+
+    <section id="Product">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+
+                    <h2> <i class="fa-solid fa-camera-retro"></i> Produtos</h2>
+
+                    <div class="card" class="col-md-4 col-sm-12">
+                        <img src="./imagens/wedding.jpg" alt="abstract-art" class="img-fluid" class="img-thumbnail">
+                        <div class="card-body">
+                            <h5 class="card-title">Casamento</h5>
+                            <p class="card-text" >Saiba mais sobre nossos pacotes...</p>
+                            <a type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalCasamento">ver produto</a>
+                        </div>
+                    </div>
+
+                    <div class="card" class="col-md-4 col-sm-12">
+                        <img src="./imagens/formatura.jpg" alt="abstract-art" class="img-fluid" class="img-thumbnail">
+                        <div class="card-body">
+                            <h5 class="card-title">Formatura</h5>
+                            <p class="card-text">Saiba mais sobre nossos pacotes...</p>
+                            <a type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalFormatura">ver produto</a>
+                        </div>
+                    </div>
+
+                    <div class="card" class="col-md-4 col-sm-12">
+                        <img src="./imagens/foto-profissional.jpg" alt="abstract-art" class="img-fluid" class="img-thumbnail">
+                        <div class="card-body">
+                            <h5 class="card-title">Profissional</h5>
+                            <p class="card-text">Saiba mais sobre nossos pacotes...</p>
+                            <a type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalProfissional">ver produto</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <section id="Contact">
+        <div class="container">
+        <div class="row">
+            <div class="col-md-12 col-sm-12">
+                <h2><i class="fa-solid fa-envelope"></i> Entre em contato!</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid quibusdam itaque error explicabo, veniam ipsa exercitationem.</p>
+            </div>
+          
+            <form id="contactForm">
+
+            <div class="needs-validation" novalidate>
+
+            <div class="input-group">
+              <input class="form-control" type="name" name="nome" id="primeiroNome" minlength="4" placeholder="digite seu nome" required>
+            </div>
+
+          <div class="input-group">
+              <input class="form-control" type="email" name="email" id="meuEmail" placeholder="digite seu email" required>
+          </div>
+
+
+          <div class="input-group">
+              <input class="form-control" type="text" name="bairro" placeholder="digite seu bairro" required>
+          </div>
+
+          <div class="input-group">
+            <input class="form-control" type="telephone" name="telefone" id="meuTelefone" length="9" placeholder="digite seu telefone: (xx) xxxxxxxxx" pattern="\([0-9]{2}\)[\s][0-9]{9}" required>
+        </div>
+
+        <div class="input-group">
+          <input class="form-control" type="text" name="endereço" placeholder="digite seu endereço e complemento" required>
+        </div>
+
+        <div class="row">
+            <div class="col">
+                <label for="cidade">Cidade</label>
+                <input type="text" name="cidade" id="cidade" class="form-control" placeholder="Digite sua cidade" minlength="3" required>
+            </div>
+            <div class="col">
+            <label for="estado">Estado</label>
+            <select name="Estado" id="estado" class="form-control" required>
+                <option value="">Selecione seu Estado:</option>
+                <option value="sp">SP</option>
+                <option value="rj">RJ</option>
+                <option value="rs">RS</option>
+                <option value="sc">SC</option>
+                <option value="pr">PR</option>
+            </select>
+            </div>
+            </div>
+
+        <div class="input-group">
+              <textarea class="form-control" name="" rows="5" id="meuTexto" placeholder="Digite sua mensagem aqui." required></textarea>
+        </div>
+        
+        <div class="input-group form-check">
+            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+            <label class="form-check-label" for="flexCheckDefault">
+                <p> Aceito os <a href="">Termos</a> e quero receber as novidades por email.</p>
+            </label>
+            </div>
+        
+        <div class="col-12">
+          <button class="btn btn-primary" type="submit" id="submitBtn" minlenght="5" data-bs-toggle="modal" data-bs-target="#contatoFeito" disabled>Submit form</button>
+        </div>
+
+      </div>
+        </form>        
+    </section>
+   
+    
+    <div class="modal fade" id="modalCasamento">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title"><i class="fa-solid fa-rings-wedding"></i> Fotos Casamento</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <h6> Valores do Serviço</h6>
+                    <table class="table table-hover">
+                        <thead>
+                        <tr>
+                            <th>Serviço</th>
+                            <th>Valor</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>Foto Casamento Completo</td>
+                        <td>R$15.000,00</td>
+                    </tr>
+                    <tr>
+                        <td>Foto Mini-Wedding</td>
+                        <td>R$10.000,00</td>
+                    </tr>
+                    <tr>
+                        <td>Foto Casamento Civil</td>
+                        <td>R$2.500,00</td>
+                    </tr>
+                    </tbody>
+                    </table>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<div class="modal fade" id="modalFormatura">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title"><i class="fa-solid fa-user-graduate"></i> Fotos Formatura</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <h6> Valores do Serviço</h6>
+            <table class="table table-hover">
+                <thead>
+                <tr>
+                    <th>Serviço</th>
+                    <th>Valor</th>
+                </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>Foto Formtura Completo</td>
+                <td>R$6.000,00</td>
+            </tr>
+            <tr>
+                <td>Foto Mini-Formatura</td>
+                <td>R$3.000,00</td>
+            </tr>
+            <tr>
+                <td>Foto Formatura Studio</td>
+                <td>R$1.800,00</td>
+            </tr>
+            </tbody>
+            </table>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<div class="modal fade" id="modalProfissional">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title"><i class="fa-solid fa-user-tie"></i> Fotos Profissionais</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+            <div class="modal-body">
+                <h6> Valores do Serviço</h6>
+                <table class="table table-hover">
+                    <thead>
+                    <tr>
+                        <th>Serviço</th>
+                        <th>Valor</th>
+                    </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>Foto Profissionais Completo</td>
+                    <td>R$5.000,00</td>
+                </tr>
+                <tr>
+                    <td>Foto Studio</td>
+                    <td>R$3.000,00</td>
+                </tr>
+                </tbody>
+                </table>
+            </div>
+            <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal"></button>
+            </div>
+        </div>
+    </div>
+</div>
+
+  <div class="modal fade" id="modalHistoria">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+            <h5 class="modal-title"><i class="fa-solid fa-heart"></i> Nossa História</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos quidem ducimus voluptates, eligendi hic laborum assumenda asperiores atque quae explicabo? Voluptas est doloremque, commodi error nihil non blanditiis hic unde?</p><br>
+                <p>Nos siga no instagram <i class="fa-brands fa-instagram"></i> :<a href="http://www.instagram.com/"><strong>@nossahistoria</strong></a></p>
+            </div>
+            <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+       </div>
+    </div>
+</div>
+
+<div class="modal fade" id="contatoFeito">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+            <h5 class="modal-title"><i class="fa-solid fa-triangle-exclamation"></i> Verifique seus dados!</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>Preencha corretamente todo o formulário para enviar sua mensagem.</p>
+            </div>
+            <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+       </div>
+    </div>
+</div>
+
+<script>
+    let primeiroNome = document.getElementById("primeiroNome");
+    let contactForm = document.getElementById("contactForm");
+    let meuEmail = document.getElementById("meuEmail");
+    let meuTelefone = document.getElementById("meuTelefone");
+    let meuTexto = document.getElementById("meuTexto");
+    let formControl = document.getElementById("form-control");
+    let input = document.querySelectorAll("input");
+    let inputGroup = document.getElementsByClassName("input-group");
+    let submitBtn = document.getElementById("submitBtn");
+    let cidade = document.getElementById('cidade');
+
+  contactForm.addEventListener("focusout", () => {
+    if(input.value= "valid" && meuEmail.value !== "") {
+        submitBtn.removeAttribute("disabled");
+    } else {
+        submitBtn.setAttribute("disabled", "disabled");
+    }
+  });
+
+var myCarousel = document.querySelector('#carouselExampleIndicators');
+var carousel = new bootstrap.Carousel(myCarousel, {
+  interval: 2000,
+  wrap: false,
+})
+
+</script>
+
+<script src="./js/bootstrap.min.js"></script>
+<script src="https://kit.fontawesome.com/33990c9ab3.js" crossorigin="anonymous"></script>
+
+</body>
+
+<footer>This website is delevoped by Raysa Townsend Carraro <i class="fa-solid fa-copyright"></i></footer>
+
+</html>
